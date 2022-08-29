@@ -1,5 +1,5 @@
 ## projeto_ifpi
 
--cadrastre-se
-
--login inicial
+- cadrastre-se
+- tela inicial
+- login
