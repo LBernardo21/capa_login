@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        body{
+            background: #d3edf8;
+        }
+        .input_group{
+            position: relative;
+        }
+        input{
+            background: #d3edf8;
+            outline: none;
+            color: #444444;
+            border: 1px solid #0da2ff;
+        }
+        .placeholder{
+            position: absolute;
+            top:10px;
+            left: 10px;
+            font-size: 14px;
+            padding: 0px 5px;
+            color: #0da2ff;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        .input:focus + .placeholder,
+        .input:not(:placeholder-shown)
+        + .placeholder{
+            top: -10px;
+            background-color: #d3edf8;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <input type="text"
+        class="input" placeholder=" "/>
+        <label class="placeholder"> username</label>
+    </div>
+</body>
+</html>
